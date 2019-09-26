@@ -16,11 +16,8 @@ app.get('/', (req, res) => {
     const hasTLD = /^\w+(\.\w+)+(#|!|\?(\w+=)?|\/?)?\w*$/;
     const hasProtocol = /https?:\/\//; // has 'http://' or 'https://' in front
 
-    let finalURL = !hasProtocol.test(q)
-      ? protocol
-      : '' + q + !hasTLD.test(q)
-      ? tld
-      : '';
+    let finalURL =
+      (!hasProtocol.test(q) ? protocol : '') + q + (!hasTLD.test(q) ? tld : '');
 
     return res.redirect(finalURL);
   }
