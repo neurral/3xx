@@ -3,14 +3,12 @@
   "version": "1.0.0",
   "description": "browser search engine acting simple redirector to circumvent search engines that track via omnibars",
   "main": "dist/app.js",
-  "engines": {
-    "node": "10.16.0"
-  },
   "scripts": {
     "tsc": "tsc",
     "dev": "ts-node-dev --respawn --transpileOnly ./app.ts",
     "prod": "tsc && node ./dist/app.js",
-    "heroku-postbuild": "npm run prod"
+    "postinstall": "npm run prod",
+    "start": "node dist/app.js"
   },
   "repository": {
     "type": "git",
