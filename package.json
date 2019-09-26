@@ -1,0 +1,22 @@
+{
+  "name": "3xx",
+  "version": "1.0.0",
+  "description": "browser search engine acting simple redirector to circumvent search engines that track via omnibars",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neurral/3xx.git"
+  },
+  "author": "john20xdoe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neurral/3xx/issues"
+  },
+  "homepage": "https://github.com/neurral/3xx#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
