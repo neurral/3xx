@@ -6,7 +6,7 @@
   "scripts": {
     "tsc": "tsc",
     "dev": "ts-node-dev --respawn --transpileOnly ./app.ts",
-    "prod": "tsc && node ./dist/app.js",
+    "prod": "tsc",
     "postinstall": "npm run prod",
     "start": "node dist/app.js"
   },
