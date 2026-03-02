@@ -1,14 +1,11 @@
 {
   "name": "3xx",
   "version": "1.0.0",
-  "description": "browser search engine acting simple redirector to circumvent search engines that track via omnibars",
-  "main": "dist/app.js",
+  "description": "Chrome extension that redirects omnibar input directly to URLs or search engines, bypassing tracking",
   "scripts": {
-    "tsc": "tsc",
-    "dev": "ts-node-dev --respawn --transpileOnly ./app.ts",
-    "prod": "tsc",
-    "postinstall": "npm run prod",
-    "start": "node dist/app.js"
+    "build": "tsc && cp src/*.html manifest.json dist/ && cp -r icons dist/",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
@@ -20,12 +17,8 @@
     "url": "https://github.com/neurral/3xx/issues"
   },
   "homepage": "https://github.com/neurral/3xx#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
   "devDependencies": {
-    "@types/express": "^4.17.1",
-    "ts-node-dev": "^1.0.0-pre.43",
-    "typescript": "^3.6.3"
+    "@types/chrome": "^0.0.268",
+    "typescript": "^5.0.0"
   }
 }
