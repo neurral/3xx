@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>3xx Options</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .preset {
+        margin: 10px 0;
+      }
+      button {
+        margin: 5px;
+        padding: 8px 12px;
+      }
+      input {
+        width: 100%;
+        padding: 8px;
+        margin: 10px 0;
+      }
+      .status {
+        margin-top: 20px;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>3xx Extension Options</h1>
+    <p>Choose your preferred search engine for queries that aren't URLs:</p>
+
+    <div class="presets">
+      <button id="duckduckgo">DuckDuckGo</button>
+      <button id="google">Google</button>
+      <button id="bing">Bing</button>
+      <button id="startpage">Startpage</button>
+      <button id="brave">Brave Search</button>
+    </div>
+
+    <p>Or enter a custom search URL template (use %s for the query):</p>
+    <input
+      type="text"
+      id="customTemplate"
+      placeholder="https://example.com/search?q=%s"
+    />
+
+    <div id="status"></div>
+
+    <script src="options.js"></script>
+  </body>
+</html>

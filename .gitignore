@@ -8,6 +8,9 @@ yarn-error.log*
 # Runtime data
 pids
 *.pid
+
+# Build output
+dist/
 *.seed
 *.pid.lock
 

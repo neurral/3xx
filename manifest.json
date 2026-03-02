@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "3xx",
+  "version": "1.0.0",
+  "description": "Redirect omnibar input directly to URLs or search engines, bypassing tracking",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "omnibox": {
+    "keyword": "`"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html"
+}
