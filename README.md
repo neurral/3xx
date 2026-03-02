@@ -4,7 +4,7 @@ A Chrome extension that redirects omnibar input directly to URLs or search engin
 
 ## How it works
 
-Type `3x` in the Chrome address bar, press Tab, then enter your query:
+Type the backtick (`) in the Chrome address bar, press Tab, then enter your query:
 
 - If you enter a URL (e.g., `facebook.com`), it navigates directly to that site.
 - If you enter a search query (e.g., `hello world`), it forwards to your configured search engine.

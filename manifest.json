@@ -8,7 +8,7 @@
     "tabs"
   ],
   "omnibox": {
-    "keyword": "3x"
+    "keyword": "`"
   },
   "background": {
     "service_worker": "background.js"
